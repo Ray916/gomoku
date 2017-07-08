@@ -1,0 +1,125 @@
+#chessboard table * {
+	font-size: 12px;
+	line-height: 1em !important;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	color: white;
+}
+.error {
+	color: red;
+	font-size: 4em;
+	line-height: 1.5em;
+}
+#toolbar {
+	margin-bottom: 30px;
+}
+#toolbar button {
+	background-color: gray;
+	color: white;
+	border: none;
+	box-shadow: 0 0 5px;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 14px !important;
+}
+#toolbar button:disabled {
+	opacity: 0.5;
+	filter: Alpha(Opacity=50);
+}
+#chessboard {
+	width: 470px;
+	margin: 0 auto;
+}
+#chessboard table {
+	border-collapse: collapse;
+}
+#chessboard-space {
+	box-shadow: 0 0 5px red;
+	margin-left: -15px;
+	margin-top: -450px;
+}
+#chessboard-background {
+	top: 15px;
+	left: 15px;
+	background-color: burlywood;
+}
+#chessboard-background td {
+	border: 1px solid black;
+	width: 30px;
+	height: 30px;
+	*height: 31px;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+#chessboard-space td {
+	text-align: center;
+	width: 31px;
+	height: 31px;
+	border: none;
+	padding: 0 !important;
+	margin: 0 !important;
+	border-radius: 15px;
+}
+#chessboard-space td:hover {
+	background-color: dodgerblue;
+	cursor: pointer;
+}
+.white-chess {
+	background: url("./white-chess.png") no-repeat -5px -5px;
+}
+.black-chess {
+	background: url("./black-chess.png") no-repeat -5px -5px;
+}
+.last-chess .last-chess-point {
+	display: inline-block !important;
+	width: 10px;
+	height: 10px;
+	border: 1px dashed red;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+}
+.gameover-lay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 5em;
+	text-shadow: 7px 4px 19px  black;
+	z-index: 15px;
+	font-weight: bold;
+}
+.gameover-overlay {
+	opacity: 0.2;
+	filter: Alpha(Opacity=20);
+	background-color: gray;
+	position: absolute;
+	z-index: 10px;
+}
+.white-chess .chessboard-important-point, .black-chess .chessboard-important-point, .white-chess .last-chess-point, .black-chess .last-chess-point {
+	display: none;
+}
+#toolbar {
+	text-align: center;
+}
+.chessboard-important-point {
+	width: 5px;
+	height: 5px;
+	background-color: red;
+	display: inline-block;
+	position: relative;
+	top: -1px;
+}
+.top {
+	margin-bottom: 1em;
+}
+.switch-lang a {
+	opacity: 0.5;
+	filter: Alpha(Opacity=50);
+	text-decoration: none;
+}
+a.current-lang {
+	opacity: 1;
+	filter: Alpha(Opacity=100);
+}

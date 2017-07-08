@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}的战绩：{{win}}/{{total}}</text>
+  </view>
+  <view class="chess">
+     <canvas canvas-id="myCanvas" bindtouchstart="onClickChessboard" />
+  </view>
+  <view class="operation">
+    <button class="restart" bindtap="restart">再来一局</button>
+  </view>
+</view>
